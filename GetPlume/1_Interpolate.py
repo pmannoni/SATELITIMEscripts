@@ -38,7 +38,7 @@ if os.name == 'nt':
     outpathNPY = homepath+'\\SATELITIME\\data\\contours\\interp_npy\\'
     landpath = homepath+'\\SATELITIME\\data\\'
 else : 
-    path = homepath+'/SATELITIME/data/ZR/'
+    path = homepath+'/SATELITIME/data/ZR/aqua_chl_R32_9km_noint/'
     outpath = homepath+'/SATELITIME/data/contours/interp_png/'
     outpathNPY = homepath+'/SATELITIME/data/contours/interp_npy/'
     landpath = homepath+'/SATELITIME/data/'
@@ -83,7 +83,7 @@ land = np.hstack((landXY,landNAN))
 data = glob.glob(path+'*.npy')
 data.sort()
 print data
-
+raw_input("Press any key to proceed")
 # Colormap Chl de ref
 
 #           COULEUR
